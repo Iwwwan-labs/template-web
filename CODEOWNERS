@@ -1,0 +1,6 @@
+# Reviewers for this repository.
+# The organization-wide CODEOWNERS applies as a fallback for repositories
+# without their own file.
+
+*           @iwwwan-io
+/.github/   @iwwwan-io
