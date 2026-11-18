@@ -13,6 +13,12 @@ updates:
         dependency-type: development
       production:
         dependency-type: production
+    ignore:
+      # Templates pin a known-good stack. A major upgrade is deliberate work
+      # with its own pull request, not a weekly automated bump.
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: github-actions
     directory: /
@@ -21,3 +27,7 @@ updates:
       day: monday
     labels:
       - dependencies
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
