@@ -16,7 +16,7 @@ updates:
     ignore:
       # Templates pin a known-good stack. A major upgrade is deliberate work
       # with its own pull request, not a weekly automated bump.
-      - dependency-name: "*"
+      - dependency-name: '*'
         update-types:
           - version-update:semver-major
 
@@ -28,6 +28,6 @@ updates:
     labels:
       - dependencies
     ignore:
-      - dependency-name: "*"
+      - dependency-name: '*'
         update-types:
           - version-update:semver-major
