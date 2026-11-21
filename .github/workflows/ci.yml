@@ -1,10 +1,12 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
 
+# Revalidate against the latest organization-wide reusable workflow.
 permissions:
   contents: read
 
